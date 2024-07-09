@@ -1,0 +1,17 @@
+[
+  {
+    "context": "Editor && vim_mode == normal",
+    "bindings": {
+      "tab": "tab_switcher::Toggle",
+      "ctrl-shift-q": "zed::Quit"
+    }
+  },
+  {
+    "context": "TabSwitcher",
+    "bindings": {
+      "d": "tab_switcher::CloseSelectedItem",
+      "j": ["workspace::SendKeystrokes", "down"],
+      "k": ["workspace::SendKeystrokes", "up"]
+    }
+  }
+]
