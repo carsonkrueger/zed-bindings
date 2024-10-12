@@ -1,17 +1,26 @@
 [
-  {
-    "context": "Editor && vim_mode == normal",
-    "bindings": {
-      "tab": "tab_switcher::Toggle",
-      "ctrl-shift-q": "zed::Quit"
+    {
+        "context": "Editor && vim_mode == normal",
+        "bindings": {
+            "tab": "tab_switcher::Toggle",
+            "ctrl-shift-q": "zed::Quit"
+        }
+    },
+    {
+        "context": "TabSwitcher",
+        "bindings": {
+            "d": "tab_switcher::CloseSelectedItem",
+            "j": ["workspace::SendKeystrokes", "down"],
+            "k": ["workspace::SendKeystrokes", "up"]
+        }
+    },
+    {
+        "context": "Pane",
+        "bindings": {
+            "ctrl-k k": "pane::SplitUp",
+            "ctrl-k j": "pane::SplitDown",
+            "ctrl-k h": "pane::SplitLeft",
+            "ctrl-k l": "pane::SplitRight"
+        }
     }
-  },
-  {
-    "context": "TabSwitcher",
-    "bindings": {
-      "d": "tab_switcher::CloseSelectedItem",
-      "j": ["workspace::SendKeystrokes", "down"],
-      "k": ["workspace::SendKeystrokes", "up"]
-    }
-  }
 ]
