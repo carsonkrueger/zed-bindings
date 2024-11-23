@@ -7,7 +7,18 @@
 // custom settings, run the `open default settings` command
 // from the command palette or from `Zed` application menu.
 {
-    "theme": "One Dark",
+    "assistant": {
+        "default_model": {
+            "provider": "zed.dev",
+            "model": "claude-3-5-sonnet-latest"
+        },
+        "version": "2"
+    },
+    "telemetry": {
+        "diagnostics": false,
+        "metrics": false
+    },
+    // "theme": "Ayu Dark",
     "ui_font_size": 14,
     "buffer_font_size": 14,
     "vim_mode": true,
@@ -20,6 +31,44 @@
             "inlay_hints": {
                 "enabled": true
             }
+        },
+        "TypeScript": {
+            "prettier": {
+                "allowed": false
+            }
+        },
+        "JavaScript": {
+            "prettier": {
+                "allowed": false
+            }
         }
+    },
+    "experimental.theme_overrides": {
+        // "background.appearance": "blurred",
+        "background": "#09090bd7",
+        "panel.background": "#00000000",
+        "editor.background": "#00000000",
+        "tab_bar.background": "#00000000",
+        "terminal.background": "#00000000",
+        "toolbar.background": "#00000000",
+        "tab.inactive_background": "#00000000",
+        "tab.active_background": "#3f3f4650",
+        "border": "#00000000",
+        "status_bar.background": "#00000080",
+        "title_bar.background": "#00000080",
+        "title_bar.inactive_background": "#00000080",
+        "border.variant": "#00000000",
+        "scrollbar.track.background": "#52525b20",
+        "scrollbar.track.border": "#00000000",
+        "scrollbar.thumb.background": "#52525b90",
+        "scrollbar.thumb.border": "#00000000",
+        "elevated_surface.background": "#000000f0",
+        "surface.background": "#000000ff",
+        "editor.active_line_number": "#ffffffcc",
+        "editor.gutter.background": "#00000000",
+        "editor.indent_guide": "#ffffff30",
+        "editor.indent_guide_active": "#ffffff80",
+        "editor.line_number": "#ffffff80",
+        "editor.active_line.background": "#3f3f4630"
     }
 }
