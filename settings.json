@@ -55,7 +55,7 @@
         }
     },
     "experimental.theme_overrides": {
-        // "background.appearance": "blurred",
+        "background.appearance": "transparent",
         "background": "#09090bd0",
         "panel.background": "#00000000",
         "editor.background": "#00000000",
