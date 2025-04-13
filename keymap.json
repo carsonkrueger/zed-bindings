@@ -3,7 +3,16 @@
         "context": "Editor && vim_mode == normal",
         "bindings": {
             "tab": "tab_switcher::Toggle",
-            "ctrl-shift-q": "zed::Quit"
+            "ctrl-shift-q": "zed::Quit",
+            "ctrl-alt-s": "workspace::SaveWithoutFormat",
+            "space e": "project_panel::ToggleFocus",
+            "space g": "git_panel::ToggleFocus",
+            "space t": "terminal_panel::ToggleFocus",
+            "[ [": "pane::SwapItemLeft",
+            "] ]": "pane::SwapItemRight",
+            "space x": "diagnostics::Deploy",
+            "space a": "assistant::ToggleFocus",
+            "space d": "debug_panel::ToggleFocus"
         }
     },
     {
@@ -19,8 +28,21 @@
         "bindings": {
             "ctrl-k k": "pane::SplitUp",
             "ctrl-k j": "pane::SplitDown",
-            "ctrl-k h": "pane::SplitLeft",
+            "ctrl- h": "pane::SplitLeft",
             "ctrl-k l": "pane::SplitRight"
+        }
+    },
+    {
+        "context": "Terminal",
+        "bindings": {
+            "escape": "terminal_panel::ToggleFocus"
+        }
+    },
+    {
+        // not working yet - assistant panel context name??
+        "context": "Assistant",
+        "bindings": {
+            "escape": "assistant::ToggleFocus"
         }
     }
 ]
