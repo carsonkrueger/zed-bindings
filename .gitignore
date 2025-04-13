@@ -1,7 +1,10 @@
-// ignore everything
+# ignore everything
 *
 
-// but not these files
+# but not these files
 !.gitignore
+!README.md
+!img/
+!img/zed_config.png
 !keymap.json
 !settings.json
