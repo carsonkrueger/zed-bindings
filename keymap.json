@@ -5,14 +5,16 @@
             "tab": "tab_switcher::Toggle",
             "ctrl-shift-q": "zed::Quit",
             "ctrl-alt-s": "workspace::SaveWithoutFormat",
+            "[ [": "pane::SwapItemLeft",
+            "] ]": "pane::SwapItemRight",
             "space e": "project_panel::ToggleFocus",
             "space g": "git_panel::ToggleFocus",
             "space t": "terminal_panel::ToggleFocus",
-            "[ [": "pane::SwapItemLeft",
-            "] ]": "pane::SwapItemRight",
             "space x": "diagnostics::Deploy",
             "space a": "assistant::ToggleFocus",
-            "space d": "debug_panel::ToggleFocus"
+            "space d": "debug_panel::ToggleFocus",
+            "space r": "editor::RestartLanguageServer",
+            "space s": "zed::OpenSettings"
         }
     },
     {
@@ -35,7 +37,8 @@
     {
         "context": "Terminal",
         "bindings": {
-            "escape": "terminal_panel::ToggleFocus"
+            "escape": "terminal_panel::ToggleFocus",
+            "shift-space": "terminal::ToggleViMode"
         }
     },
     {

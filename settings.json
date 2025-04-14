@@ -56,7 +56,7 @@
     },
     "experimental.theme_overrides": {
         "background.appearance": "transparent",
-        "background": "#09090bd0",
+        "background": "#09090be0",
         "panel.background": "#00000000",
         "editor.background": "#00000000",
         "tab_bar.background": "#00000000",
@@ -64,7 +64,7 @@
         "toolbar.background": "#00000000",
         "tab.inactive_background": "#00000000",
         "tab.active_background": "#3f3f4650",
-        "border": "#00000000",
+        "border": "#ffffff05",
         "status_bar.background": "#000000c0",
         "title_bar.background": "#000000c0",
         "title_bar.inactive_background": "#000000d0",
