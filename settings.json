@@ -16,7 +16,7 @@
     "assistant": {
         "default_model": {
             "provider": "zed.dev",
-            "model": "claude-3-5-sonnet-latest"
+            "model": "claude-3-7-sonnet-latest"
         },
         "version": "2"
     },
@@ -56,7 +56,7 @@
     },
     "experimental.theme_overrides": {
         "background.appearance": "transparent",
-        "background": "#09090be0",
+        "background": "#09090bd8",
         "panel.background": "#00000000",
         "editor.background": "#00000000",
         "tab_bar.background": "#00000000",
@@ -64,7 +64,7 @@
         "toolbar.background": "#00000000",
         "tab.inactive_background": "#00000000",
         "tab.active_background": "#3f3f4650",
-        "border": "#ffffff05",
+        "border": "#ffffff08",
         "status_bar.background": "#000000c0",
         "title_bar.background": "#000000c0",
         "title_bar.inactive_background": "#000000d0",
