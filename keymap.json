@@ -1,20 +1,17 @@
 [
     {
+        // editor binds
         "context": "Editor && vim_mode == normal",
         "bindings": {
             "tab": "tab_switcher::Toggle",
-            "ctrl-shift-q": "zed::Quit",
             "ctrl-alt-s": "workspace::SaveWithoutFormat",
-            "[ [": "pane::SwapItemLeft",
-            "] ]": "pane::SwapItemRight",
             "space e": "project_panel::ToggleFocus",
             "space g": "git_panel::ToggleFocus",
             "space t": "terminal_panel::ToggleFocus",
             "space x": "diagnostics::Deploy",
             "space a": "assistant::ToggleFocus",
             "space d": "debug_panel::ToggleFocus",
-            "space r": "editor::RestartLanguageServer",
-            "space s": "zed::OpenSettings"
+            "space r": "editor::RestartLanguageServer"
         }
     },
     {
@@ -26,26 +23,35 @@
         }
     },
     {
-        "context": "Pane",
+        // pane & navigation binds
+        "context": "Pane || Terminal || (Assistant && vim_mode == normal)|| (Editor && vim_mode == normal)",
         "bindings": {
+            // pane tab navigation
+            "ctrl-q": "pane::CloseActiveItem",
+            "ctrl-l": "pane::ActivateNextItem",
+            "ctrl-h": "pane::ActivatePreviousItem",
+            // workspace panel navigation
+            "ctrl-shift-q": "zed::Quit",
+            "alt-h": "workspace::ActivatePaneLeft",
+            "alt-l": "workspace::ActivatePaneRight",
+            "alt-k": "workspace::ActivatePaneUp",
+            "alt-j": "workspace::ActivatePaneDown",
+            // splitting
             "ctrl-k k": "pane::SplitUp",
             "ctrl-k j": "pane::SplitDown",
             "ctrl-k h": "pane::SplitLeft",
-            "ctrl-k l": "pane::SplitRight"
+            "ctrl-k l": "pane::SplitRight",
+            // swapping
+            "[ [": "pane::SwapItemLeft",
+            "] ]": "pane::SwapItemRight"
         }
     },
     {
         "context": "Terminal",
         "bindings": {
             "escape": "terminal_panel::ToggleFocus",
-            "shift-space": "terminal::ToggleViMode"
-        }
-    },
-    {
-        // not working yet - assistant panel context name??
-        "context": "Assistant",
-        "bindings": {
-            "escape": "assistant::ToggleFocus"
+            "shift-space": "terminal::ToggleViMode",
+            "ctrl-n": "workspace::NewTerminal"
         }
     }
 ]
